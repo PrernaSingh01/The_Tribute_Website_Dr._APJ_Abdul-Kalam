@@ -1,39 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
   }
   
   .container {
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(36,195,227,1) 66%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(249,250,13,1) 0%, rgba(0,212,255,1) 100%);
     min-height: 100vh;
-    border: 10px solid #1d1e4c;
+    min-width: 100%;
+    border: 10px solid #6f42c1;;
   }
   
   .content {
-    max-width: 900px;
+    max-width: 80%;
     margin: 0 auto;
   }
+
   .top_section {
-    margin-top: 100px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    padding-right: 150px;
   }
   .top_section h1 {
     font-size: 50px;
     font-weight: bold;
-    color: #1d1e4c;
+    color: #040404;
   }
+
+ h1:hover{
+     color: rgb(247, 1, 1);
+     cursor: pointer;
+  }
+
   .top_section h4 {
     font-size: 30px;
     text-align: end;
+    color: black;
   }
   
   .image_container {
     border-radius: 50%;
     overflow: hidden;
+    border: 5px solid #000000;
   }
   
   .image_container,img {
@@ -45,36 +59,167 @@
   }
   .about_section h2 {
     font-size: 70px;
-    font-weight: 400;
+    font-weight: bold;
     margin-bottom: 20px;
     text-decoration: underline;
+    color: black;
   }
+
+  h2:hover{
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+  }
+
+  .about_section h3 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: black;
+  }
+
   .about_section p {
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 1.2px;
     text-align: justify;
+    color: black;
   }
   .biography_section {
     margin: 50px 0;
   }
   .biography_section h3 {
+    font-size: 40px;
+    font-weight: 400;
     margin-bottom: 20px;
+    font-weight: bold;
+    color: black;
   }
   .biography_section ul {
     margin-left: 50px;
   }
-  .biography_section li {
+  .biography_section li  {
     margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+    text-align: justify;
+    color: black;
   }
-  
+   
+  .biography_section p{
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+    text-align: justify;
+    color: black;
+  }
+
   footer {
     margin: 50px 0;
   }
   footer p {
     text-align: end;
+    color: black;
+  }
+
+  footer a{
+    color: rgb(3, 107, 253);
+    text-decoration: none;
   }
 
   footer a:hover{
-    color: aqua;
+    color: rgb(255, 0, 0);
   }
+
+  /*About_Page*/
+
+  .profilecard{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    max-width: 370px;
+    width: 100%;
+    background: #fff;
+    border-radius: 24px;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.1);
+    position: relative;
+
+}
+
+.profilecard::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 36%;
+  width: 100%;
+  border-radius: 24px 24px 0 0;
+  background-color: #4070f4;
+}
+
+.image{
+  align-items: center;
+  position:relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: blue;
+  padding: 3px;
+  margin-bottom: 10px;
+}
+
+.image .profileimage{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.profilecard .text-data{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  color: #333;
+}
+
+.text-data .name{
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.text-data .job{
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.profilecard .media-button{
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.media-button .link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  margin: 0 8px;
+  background-color: #4070f4;
+  text-decoration: none;
+}
+
+.footer{
+  text-align: center;
+}
+
+.footer p:hover{
+  color: red;
+  cursor: pointer;
+}
